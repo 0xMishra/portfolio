@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.profile {
+  @apply w-64 h-48 object-cover relative z-20;
+}
+.showSidebar {
+  transition: all 0.1s linear;
+}
+.showSidebar {
+  @apply w-60 border-r-[1px] border-solid border-r-[#173A5E] fixed top-0 left-0 z-50 h-[100vh] bg-[#001E3C] overflow-x-hidden md:hidden;
+}
+.hideSidebar {
+  transition: all 0.1s linear;
+}
+.hideSidebar {
+  @apply w-60 border-r-[1px] border-solid border-r-[#173A5E] fixed top-0 -left-60 z-50  bg-[#001E3C] overflow-x-hidden h-[100vh];
+}
+.proImage {
+  @apply relative z-10 w-96 max-w-[450px] h-72 object-cover ml-32;
+}
+
+.proImage:hover {
+  filter: none;
+}
